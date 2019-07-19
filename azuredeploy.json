@@ -321,7 +321,7 @@
                         "name": "[concat(parameters('envPrefix'),'-',copyIndex(1),'-Diagnostic')]",
                         "properties": {
                             "privateIPAllocationMethod": "Static",
-                            "privateIpAddress": "[concat(parameters('manPrivateIPPrefix'),copyIndex(parameters('diagPrivateIPFirst')))]",
+                            "privateIpAddress": "[concat(parameters('diagPrivateIPPrefix'),copyIndex(parameters('diagPrivateIPFirst')))]",
                             "subnet": {
                                 "id": "[concat(resourceId(parameters('VNetRG'), 'Microsoft.Network/virtualNetworks', parameters('VNetName')), '/subnets/', parameters('diagnosticSubnetName'))]"
                             }
