@@ -29,8 +29,10 @@
             "type": "string",
             "allowedValues": [
                 "latest",
-                "650.10456.0",
-                "650.1119.0"
+                "66018.0.0",
+                "660.45.0",
+                "660.35.0",
+                "650115.0.0"
             ],
             "defaultValue": "latest",
             "metadata": {
